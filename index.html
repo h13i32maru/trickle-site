@@ -4,10 +4,10 @@
   <meta charset="utf-8"/>
   <title>Trickle - Write down your favorite activities without hesitation</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-  <!--<meta property="og:url" content="https://trickleapp.net/">-->
+  <meta property="og:url" content="https://trickleapp.net/">
   <meta property="og:site_name" content="Trickle">
   <meta property="og:title" content="Trickle - Write down your favorite activities without hesitation">
-  <!--<meta property="og:description" content="">-->
+  <meta property="og:description" content="Write down your favorite activities without hesitation">
   <meta property="og:type" content="website">
   <meta property="og:author" content="https://twitter.com/h13i32maru">
   <!--<meta property="og:image" content="https://trickleapp.net/image/logo_full.png">-->
@@ -17,11 +17,11 @@
   <meta property="twitter:site" content="@h13i32maru">
   <meta property="twitter:creator" content="@h13i32maru">
   <meta property="twitter:title" content="Trickle - Write down your favorite activities without hesitation">
-  <!--<meta property="twitter:description" content="">-->
+  <meta property="twitter:description" content="Write down your favorite activities without hesitation">
   <!--<meta property="twitter:image:src" content="https://trickleapp.net/image/logo_full.png">-->
   <!--<meta property="twitter:image:width" content="696">-->
   <!--<meta property="twitter:image:height" content="720">-->
-  <!--<meta name="description" content="">-->
+  <meta name="description" content="Write down your favorite activities without hesitation">
   <!--<link rel="shortcut icon" href="./image/favicon.png">-->
   <style>
     html {
@@ -30,12 +30,50 @@
 
     body {
       height: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
       margin: 0;
       color: #181818;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    }
+
+    .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .container .bg {
+      width: 100%;
+      text-align: center;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .container .bg img {
+      width: 100%;
+      opacity: 0.08;
+    }
+
+    .container .bg.bg2 {
+      position: relative;
+    }
+
+    .container article {
+      width: 100%;
+      background: #1194F6;
+      color: white;
+      font-weight: bold;
+    }
+
+    .container article .inner {
+      padding: 1em;
+    }
+
+    .store-badge {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1em;
     }
 
     .store-badge img {
@@ -43,6 +81,10 @@
     }
 
     .footer {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
       font-size: 0.75em;
       text-align: center;
     }
@@ -55,9 +97,14 @@
     }
 
     @media(min-width: 800px)  {
-      .inner {
+      .container article .inner {
         width: 500px;
         margin: auto;
+      }
+
+      .container .bg img {
+        width: auto;
+        height: 100%;
       }
     }
 
@@ -65,17 +112,24 @@
 </head>
 <body>
 
-<div style="width: 100%;">
-  <article style="background: #1194F6; padding: 2em; color: white">
+<div class="container">
+  <div class="bg bg1">
+    <img src="./image/bg1.png"/>
+  </div>
+
+
+  <article>
     <div class="inner">
       <div style="display: flex; flex-direction: row; align-items: center">
-        <img style="width: 64px; height: 64px; background-color: lightgray;"/>
-        <span style="margin-left: 10px; font-size: 2em; font-weight: bold;">Trickle</span>
+        <div style="width: 80px; height: 80px; background-color: white; border-radius: 40px; display: flex; align-items: center; justify-content: center;">
+          <img style="width: 56px; height: 56px; background: #1194F6; _border-radius: 32px; opacity: 0.7;"/>
+        </div>
+        <span style="margin-left: 10px; font-size: 2em;">Trickle</span>
       </div>
 
-      <p style="font-weight: bold;">Write down your favorite activities without hesitation</p>
+      <p>Write down your favorite activities without hesitation</p>
 
-      <div class="store-badge" style="display: flex; flex-direction: row; margin-top: 1em;">
+      <div class="store-badge">
         <img src="./image/app-store.png"/>
         <div style="width: 1em;"></div>
         <img src="./image/google-play.png"/>
@@ -83,13 +137,15 @@
     </div>
   </article>
 
-  <div class="footer">
-    <p>Created by <a href="https://twitter.com/h13i32maru">Ryo Maruyama</a>, Logo design <a href="https://twitter.com/tsukasio615">tsukasio615</a></p>
-    <p>
-      © 2018 Ryo Maruyama. All right reserved.
-    </p>
+  <div class="bg bg2">
+    <img src="./image/bg2.png"/>
+    <div class="footer">
+      <p>Created by <a href="https://twitter.com/h13i32maru">Ryo Maruyama</a>, Logo design <a href="https://twitter.com/tsukasio615">tsukasio615</a></p>
+      <p>
+        © 2018 Ryo Maruyama. All right reserved.
+      </p>
+    </div>
   </div>
-
 </div>
 
 
