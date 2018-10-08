@@ -46,6 +46,11 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
     }
 
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
     .container {
       height: 100%;
       display: flex;
@@ -100,11 +105,22 @@
       text-align: center;
     }
 
-    .footer p, .footer p a {
+    .footer p {
       color: #888;
-      text-decoration: none;
       margin: 0;
       padding-top: 4px;
+    }
+
+    .note {
+      position: absolute;
+      bottom: 10px;
+      right: 8px;
+    }
+
+    .note a {
+      margin: 0 4px;
+      font-size: 0.75em;
+      color: #888;
     }
 
     @media(min-width: 800px)  {
@@ -151,7 +167,7 @@
   <div class="bg bg2">
     <img src="./image/bg2.png"/>
     <div class="footer">
-      <p>Created by <a href="https://twitter.com/h13i32maru">Ryo Maruyama</a>, Logo design <a href="https://twitter.com/tsukasio615">tsukasio615</a></p>
+      <p>Created by <a href="https://twitter.com/h13i32maru">Ryo Maruyama</a>, Logo design by <a href="https://twitter.com/tsukasio615">tsukasio615</a></p>
       <p>
         © 2018 Ryo Maruyama. All right reserved.
       </p>
@@ -159,6 +175,11 @@
   </div>
 </div>
 
+<div class="note">
+  <a href="./-/terms.html">Terms</a>
+  <a href="./-/privacy.html">Privacy</a>
+  <a href="./-/oss.html">OSS</a>
+</div>
 </body>
 
 </html>
