@@ -1,0 +1,9 @@
+[
+  {
+    "version": "0.0.1",
+    "notes": "release",
+    "date": "2019-09-30T00:00:00Z",
+    "url": "https://trickleapp.me",
+    "platforms": ["mac", "windows"]
+  }
+]
