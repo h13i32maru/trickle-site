@@ -1,0 +1,52 @@
+@media(min-width: 800px)  {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  /* tagline */
+  .tagline > :first-child {
+    font-size: 40px;
+  }
+
+  /* downloads */
+  .downloads .download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: solid 1px #c7c7c7;
+    min-width: 160px;
+    margin-right: 20px;
+  }
+
+  .downloads .download .mdi {
+    padding-right: 10px;
+  }
+
+  .downloads .active {
+    border-color: #4A90E2;
+  }
+
+  /* screen shots */
+  .screenshots {
+    display: flex;
+  }
+
+  .screenshots .mobiles a:nth-of-type(1),
+  .screenshots .mobiles a:nth-of-type(3) {
+    display: none;
+  }
+
+  .screenshots .mobiles a:nth-of-type(2) {
+    height: 500px;
+  }
+
+  .screenshots img {
+    height: 500px;
+  }
+
+  .screenshots .desktops img {
+    height: 500px;
+  }
+}

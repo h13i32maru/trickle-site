@@ -1,0 +1,16 @@
+{
+  "name": "trickleapp.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "start": "npx http-server ./ -p 10080 -c-1"
+  },
+  "dependencies": {
+    "@mdi/font": "^4.4.95"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "homepage": "https://github.com/trickleapp/trickleapp.github.io#readme"
+}
