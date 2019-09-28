@@ -24,6 +24,10 @@
     margin-right: 20px;
   }
 
+  .downloads #windows.download {
+    margin-right: 0;
+  }
+
   .downloads .download .mdi {
     padding-right: 10px;
   }

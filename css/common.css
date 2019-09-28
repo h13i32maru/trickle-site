@@ -71,13 +71,22 @@ a {
 .downloads {
   padding-top: 30px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 
 .downloads .download .mdi {
   font-size: 36px;
   color: #6F6F6F;
+}
+
+.downloads .install-faq-windows {
+  display: none;
+  text-align: center;
+  padding-top: 4px;
+  font-size: 14px;
+  color: #f36164;
+  font-weight: bold;
 }
 
 .downloads .active {
@@ -87,6 +96,10 @@ a {
 
 .downloads .active .mdi {
   color: white;
+}
+
+.downloads #windows.active + .install-faq-windows {
+  display: block;
 }
 
 /* screen shots */
