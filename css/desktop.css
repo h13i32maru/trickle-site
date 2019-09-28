@@ -10,6 +10,10 @@
   }
 
   /* downloads */
+  .downloads {
+    padding-top: 40px;
+  }
+
   .downloads .download {
     display: flex;
     align-items: center;
@@ -31,6 +35,7 @@
   /* screen shots */
   .screenshots {
     display: flex;
+    padding-top: 40px;
   }
 
   .screenshots .mobiles a:nth-of-type(1),
