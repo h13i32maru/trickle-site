@@ -22,10 +22,18 @@
   }
 
   /* screen shots */
-  .screenshots .mobiles {
+  .screenshots .mobiles > div:first-child {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .screenshots .mobiles {
+    padding-bottom: 30px;
+  }
+
+  .screenshots .mobiles .desc {
+    padding-top: 10px;
   }
 
   .screenshots .mobiles a:nth-of-type(1),
@@ -40,6 +48,11 @@
 
   .screenshots img {
     width: 100%;
+  }
+
+  /* features */
+  .features .release-notes {
+    text-align: center;
   }
 }
 

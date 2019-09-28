@@ -18,7 +18,7 @@ a {
 }
 
 .containers-bottom {
-  margin-top: 46px;
+  margin-top: 26px;
   background: #FBFBFB;
   border-top: solid 1px #E5E5E5;
 }
@@ -91,22 +91,12 @@ a {
 /* screen shots */
 .screenshots {
   padding-top: 40px;
+  padding-bottom: 60px;
 }
 
-.screenshots .mobiles,
-.screenshots .desktops {
-  position: relative;
-  padding-bottom: 20px;
-  margin-bottom: 40px;
-}
-
-.screenshots .mobiles .release-notes,
-.screenshots .desktops .release-notes {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.screenshots .desc {
   font-size: 14px;
-  color: #9B9B9B;
+  text-align: center;
 }
 
 /* features */
@@ -133,6 +123,12 @@ a {
   padding-top: 10px;
   line-height: 26px;
   color: #808080;
+}
+
+.features .release-notes {
+  padding-top: 30px;
+  font-size: 14px;
+  color: #9B9B9B;
 }
 
 /* footer */

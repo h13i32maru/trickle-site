@@ -43,15 +43,26 @@
     display: none;
   }
 
-  .screenshots .mobiles a:nth-of-type(2) {
-    height: 500px;
-  }
-
-  .screenshots img {
-    height: 500px;
+  .screenshots .mobiles a:nth-of-type(2) img {
+    height: 448px;
+    padding-top: 18px;
   }
 
   .screenshots .desktops img {
     height: 500px;
+  }
+
+  .screenshots .mobiles .desc {
+    padding-top: 22px;
+  }
+
+  .screenshots .desktops .desc {
+    position: relative;
+    top: -14px;
+  }
+
+  /* features */
+  .features .release-notes {
+    text-align: right;
   }
 }
