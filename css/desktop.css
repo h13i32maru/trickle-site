@@ -1,0 +1,72 @@
+@media(min-width: 960px)  {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  /* tagline */
+  .tagline > :first-child {
+    font-size: 40px;
+  }
+
+  /* downloads */
+  .downloads {
+    padding-top: 40px;
+  }
+
+  .downloads .download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: solid 1px #c7c7c7;
+    min-width: 160px;
+    margin-right: 20px;
+  }
+
+  .downloads #windows.download {
+    margin-right: 0;
+  }
+
+  .downloads .download .mdi {
+    padding-right: 10px;
+  }
+
+  .downloads .active {
+    border-color: #4A90E2;
+  }
+
+  /* screen shots */
+  .screenshots {
+    display: flex;
+    padding-top: 40px;
+  }
+
+  .screenshots .mobiles a:nth-of-type(1),
+  .screenshots .mobiles a:nth-of-type(3) {
+    display: none;
+  }
+
+  .screenshots .mobiles a:nth-of-type(2) img {
+    height: 448px;
+    padding-top: 18px;
+  }
+
+  .screenshots .desktops img {
+    height: 500px;
+  }
+
+  .screenshots .mobiles .desc {
+    padding-top: 22px;
+  }
+
+  .screenshots .desktops .desc {
+    position: relative;
+    top: -14px;
+  }
+
+  /* features */
+  .features .release-notes {
+    text-align: right;
+  }
+}

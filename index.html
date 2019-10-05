@@ -26,180 +26,131 @@
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127035352-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <script src="/js/ga.js"></script>
 
-    gtag('config', 'UA-127035352-1');
-  </script>
-
-  <style>
-    html {
-      height: 100%;
-    }
-
-    body {
-      height: 100%;
-      margin: 0;
-      color: #181818;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .container {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-
-    .container .bg {
-      width: 100%;
-      text-align: center;
-      flex: 1;
-      overflow: hidden;
-    }
-
-    .container .bg img {
-      width: 100%;
-      opacity: 0.08;
-    }
-
-    .container .bg.bg2 {
-      position: relative;
-    }
-
-    .container article {
-      width: 100%;
-      background: #1194F6;
-      color: white;
-      font-weight: bold;
-    }
-
-    .container article .inner {
-      padding: 1em;
-    }
-
-    .store-badge {
-      display: flex;
-      flex-direction: row;
-      margin-top: 1em;
-    }
-
-    .store-badge img {
-      height: 40px;
-    }
-
-    .footer {
-      position: absolute;
-      width: 100%;
-      top: 0;
-      left: 0;
-      font-size: 0.75em;
-      text-align: center;
-      margin-top: 0.5em;
-    }
-
-    .footer p {
-      color: #888;
-      margin: 0;
-      padding-top: 4px;
-    }
-
-    .note a {
-      margin: 0 4px;
-    }
-
-    .footer .sep {
-      width: 80%;
-      border-top: 1px solid #ddd;
-      margin: 1em auto 0.5em auto;
-    }
-
-    @media(min-width: 800px)  {
-      .container article .inner {
-        width: 450px;
-        margin: auto;
-      }
-
-      .container .bg img {
-        width: auto;
-        height: 100%;
-      }
-
-      .footer .sep {
-        width: 400px;
-      }
-    }
-
-    @media(max-width: 800px)  {
-      .container .bg1 {
-        position: relative;
-      }
-
-      .container .bg1 img {
-        position: absolute;
-        left: 0;
-        bottom: 4px;
-      }
-    }
-
-  </style>
+  <link rel="stylesheet" href="/css/materialdesignicons.css"/>
+  <link rel="stylesheet" href="/css/common.css"/>
+  <link rel="stylesheet" href="/css/mobile.css"/>
+  <link rel="stylesheet" href="/css/desktop.css"/>
 </head>
 <body>
 
-<div class="container">
-  <div class="bg bg1">
-    <img src="./image/bg1.png"/>
+<div class="containers-top">
+<!--  navigation -->
+  <div class="navigation container">
+    <a href="/"><img src="/image/site_logo_128.png"/></a>
+    <a href="/">TRICKLE</a>
+    <a href="/-/article.html">ARTICLE</a>
+    <a href="/-/faq.html">FAQ</a>
   </div>
 
+<!--  tagline -->
+  <div class="tagline container">
+    <div>Write down your favorite activities without hesitation</div>
+    <!--  <div>Trickle is a tool for people who want to keep a lot of things. Then subscribe and enjoy topics of interest to your friends and family.</div>-->
+    <div>Then subscribe and enjoy topics of interest to your <strong>friends and family</strong>.</div>
+  </div>
 
-  <article>
-    <div class="inner">
-      <div style="display: flex; flex-direction: row; align-items: center">
-        <img style="width: 56px; height: 56px;" src="./image/site_logo.png"/>
-        <span style="margin-left: 10px; font-size: 2em;">Trickle</span>
-      </div>
-
-      <p>Write down your favorite activities without hesitation</p>
-
-      <div class="store-badge">
-        <a href="https://itunes.apple.com/us/app/trickle-favorite-activities/id1441204205?mt=8">
-          <img src="./image/app-store.png"/>
-        </a>
-        <div style="width: 1em;"></div>
-        <a href="https://play.google.com/store/apps/details?id=jp.h13i32maru.trickle">
-          <img src="./image/google-play.png"/>
-        </a>
-      </div>
+<!--  download -->
+  <div class="downloads container">
+    <a id="iphone" class="download js-track" href="https://apps.apple.com/us/app/trickle-favorite-activities/id1441204205">
+      <span class="mdi mdi-apple"></span>
+      <div>iPhone</div>
+    </a>
+    <a id="android" class="download js-track" href="https://play.google.com/store/apps/details?id=jp.h13i32maru.trickle">
+      <span class="mdi mdi-google-play"></span>
+      <div>Android</div>
+    </a>
+    <a id="mac" class="download js-track" href="https://www.dropbox.com/s/3loms6g7fgxklcr/trickle_v1.0.0_mac.zip?dl=1">
+      <span class="mdi mdi-desktop-mac"></span>
+      <div>Mac</div>
+    </a>
+    <div>
+      <a id="windows" class="download js-track" href="https://www.dropbox.com/s/uqo3cf4l7e7j1pb/trickle_v1.0.0_windows_setup.exe?dl=1">
+        <span class="mdi mdi-windows"></span>
+        <div>Windows</div>
+      </a>
+      <a class="install-faq-windows" href="/-/faq.html#windows-install">Install FAQ</a>
     </div>
-  </article>
+  </div>
 
-  <div class="bg bg2">
-    <img src="./image/bg2.png"/>
-    <div class="footer">
-      <p>Created by <a href="https://twitter.com/h13i32maru">Ryo Maruyama</a>, Logo design by <a href="https://twitter.com/tsukasio615">tsukasio615</a></p>
-      <p>
-        © 2018 Ryo Maruyama. All right reserved.
-      </p>
-      <div class="sep"></div>
-      <p class="note">
-        <a href="mailto:h13i32maru@gmail.com">Contact</a>
-        <a href="./-/terms.html">Terms</a>
-        <a href="./-/privacy.html">Privacy</a>
-        <a href="./-/oss.html">OSS</a>
-        <a href="http://blog.h13i32maru.jp/entry/2018/11/12/092904">Article</a>
-      </p>
+<!--  screenshots -->
+  <div class="screenshots container">
+    <div class="mobiles">
+      <div>
+        <a href="./image/original/ss_mobile_topics.png"><img src="./image/ss_mobile_topics.png"/></a>
+        <a href="./image/original/ss_mobile_home.png"><img src="./image/ss_mobile_home.png"/></a>
+        <a href="./image/original/ss_mobile_subscriptions.png"><img src="./image/ss_mobile_subscriptions.png"/></a>
+      </div>
+      <div class="desc">Writing and Browsing</div>
+    </div>
+    <div class="desktops">
+      <a href="./image/original/ss_desktop_rich.png"><img src="./image/ss_desktop_rich.png"/></a>
+      <div class="desc">Specialized for Writing</div>
+    </div>
   </div>
 </div>
 
-</div>
-</body>
+<!-- features -->
+<div class="features container" id="features">
+  <div class="feature">
+    <div class="feature-title">
+      <span class="mdi mdi-pencil"></span>
+      <span>Topics and activities</span>
+    </div>
+    <div class="feature-desc">You can create your favorite topics such as reading, running, playing games, and write down the activities for each topic.</div>
+  </div>
+  <div class="feature">
+    <div class="feature-title">
+      <span class="mdi mdi-link"></span>
+      <span>Link activities</span>
+    </div>
+<!--    <div class="feature-desc">Trickle doesn't have any good or comments. There is only the ability to link any activity to your activity. By combining this link function with a topic, you can use it as a favorite, comment, quote, bookmark, etc. Enjoy the hack!</div>-->
+    <div class="feature-desc">Trickle has only the ability to link any activity. By combining this link function with a topic, you can use it as a favorite, comment, bookmark and more.</div>
+  </div>
+  <div class="feature">
+    <div class="feature-title">
+      <span class="mdi mdi-voice"></span>
+      <span>Subscribe to topics</span>
+    </div>
+    <div class="feature-desc">You can freely subscribe only to the topics you are interested in made by friends and family. So people who are looking at your topic are really interested in your topic.</div>
+  </div>
 
+  <div class="release-notes">
+    <a href="/-/release/mobile.html">Mobile release notes</a>
+    /
+    <a href="/-/release/desktop.html">Desktop release notes</a>
+  </div>
+</div>
+
+<div class="containers-bottom">
+<!--  footer -->
+  <footer>
+    <div class="terms">
+      <a href="mailto:h13i32maru+trickle@gmail.com">Contact</a>
+      <a href="/-/terms.html">Terms</a>
+      <a href="/-/privacy.html">Privacy</a>
+      <a href="/-/oss.html">OSS</a>
+    </div>
+    <div class="copyright">
+      <a href="https://h13i32maru.jp">© 2019 Ryo Maruyama. All right reserved.</a>
+    </div>
+    <div class="contact">
+      <a href="https://twitter.com/h13i32maru"><span class="mdi mdi-twitter"></span></a>
+      <a href="https://github.com/h13i32maru"><span class="mdi mdi-github-circle"></span></a>
+      <a href="mailto:h13i32maru+trickle@gmail.com"><span class="mdi mdi-gmail"></span></a>
+    </div>
+  </footer>
+</div>
+
+<script>
+  if (navigator.userAgent.indexOf('Macintosh') !== -1) document.querySelector('#mac').classList.add('active');
+  if (navigator.userAgent.indexOf('Windows') !== -1) document.querySelector('#windows').classList.add('active');
+  if (navigator.userAgent.indexOf('iPhone') !== -1) document.querySelector('#iphone').classList.add('active');
+  if (navigator.userAgent.indexOf('iPhone') !== -1) document.querySelector('#iphone').classList.add('active');
+  if (navigator.userAgent.indexOf('iPad') !== -1) document.querySelector('#iphone').classList.add('active');
+  if (navigator.userAgent.indexOf('Android') !== -1) document.querySelector('#android').classList.add('active');
+</script>
+<script src="/js/track.js"></script>
+</body>
 </html>
