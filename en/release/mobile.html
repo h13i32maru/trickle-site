@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Trickle - Write down your favorite activities without hesitation</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <meta property="og:url" content="https://trickleapp.me/">
+  <meta property="og:site_name" content="Trickle">
+  <meta property="og:title" content="Trickle - Write down your favorite activities without hesitation">
+  <meta property="og:description" content="Write down your favorite activities without hesitation">
+  <meta property="og:type" content="website">
+  <meta property="og:author" content="https://twitter.com/h13i32maru">
+  <meta property="og:image" content="https://trickleapp.me/image/ogp_logo.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:site" content="@h13i32maru">
+  <meta property="twitter:creator" content="@h13i32maru">
+  <meta property="twitter:title" content="Trickle - Write down your favorite activities without hesitation">
+  <meta property="twitter:description" content="Write down your favorite activities without hesitation">
+  <meta property="twitter:image:src" content="https://trickleapp.me/image/ogp_logo.png">
+  <meta property="twitter:image:width" content="512">
+  <meta property="twitter:image:height" content="512">
+  <meta name="description" content="Write down your favorite activities without hesitation">
+  <link rel="shortcut icon" href="/image/favicon.png">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127035352-1"></script>
+  <script src="/js/ga.js"></script>
+
+  <link rel="stylesheet" href="/css/materialdesignicons.css"/>
+  <link rel="stylesheet" href="/css/common.css"/>
+  <link rel="stylesheet" href="/css/mobile.css"/>
+  <link rel="stylesheet" href="/css/desktop.css"/>
+
+  <style>
+    h2 span {
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+<!--  navigation -->
+<div class="navigation container">
+  <a href="/en/"><img src="/image/site_logo_128.png"/></a>
+  <a href="/en/">TRICKLE</a>
+  <a href="/en/article.html">ARTICLE</a>
+  <a href="/en/faq.html">FAQ</a>
+</div>
+
+<div class="container">
+  <h2>2.3.0 <span>2019/10/19</span></h2>
+  <div>
+    <div>Feat</div>
+    <ul>
+      <li>Download image of an activity</li>
+    </ul>
+
+    <div>Fix</div>
+    <ul>
+      <li>Support iPhone11</li>
+    </ul>
+
+    <div>Internal</div>
+    <ul>
+      <li>Update ReactNative v0.57 to v0.61</li>
+      <li>Update many packages</li>
+      <li>Not use react-native-fast-image</li>
+      <li>TypeScript</li>
+    </ul>
+  </div>
+
+  <h2>2.2.1 <span>2019/01/03</span></h2>
+  <div>
+    <div>Fix</div>
+    <ul>
+      <li>Fix hidden text when input long text</li>
+    </ul>
+  </div>
+
+  <h2>2.2.0 <span>2018/12/19</span></h2>
+  <div>
+    <div>Feat</div>
+    <ul>
+      <li>You can create a new topic from the activity creation screen</li>
+      <li>New design of activity creation screen</li>
+      <li>The OGP of the URL can be displayed on the activity creation screen</li>
+      <li>Changed the appearance of the activity</li>
+      <li>Displayed a mark on today's tile of the activity tile</li>
+      <li>Reloading after writing activity became smooth</li>
+    </ul>
+  </div>
+
+  <h2>2.1.0 <span>2018/12/12</span></h2>
+  <div>
+    <div>Feat</div>
+    <ul>
+      <li>You can now set the title color of the topic and the border color</li>
+      <li>Tap the activity tile to display the activity for that week</li>
+      <li>You can now remove your topic from "Example Topic"</li>
+      <li>Improved activity writing screen</li>
+    </ul>
+    <div>Fix</div>
+    <ul>
+      <li>Fixed bug in topic title input and description input</li>
+      <li>Time zone considered for activity tile</li>
+      <li>Fixed that the screen will be whiteout after writing the activity</li>
+    </ul>
+  </div>
+
+  <h2>2.0.1 <span>2018/12/02</span></h2>
+  <div>
+    <div>Fix</div>
+    <ul>
+      <li>Fix bug</li>
+      <li>Implement account deletion</li>
+    </ul>
+  </div>
+
+  <h2>2.0.0 <span>2018/11/29</span></h2>
+  <div>
+    <div>Feat</div>
+    <ul>
+      <li>Trial implementation of "Example Topics"</li>
+      <li>Added display of own activity list on activity creation screen</li>
+      <li>Correspond to search history</li>
+      <li>Add Topic's title and explanation to the search target of Activity</li>
+      <li>Add descriptive text to Topic's search target</li>
+      <li>Edit button hidden with title of long Topic is fixed</li>
+    </ul>
+    <div>Fix</div>
+    <ul>
+      <li>Limit the number of images that can be attached to an activity to a maximum of 4 images</li>
+      <li>Delete "All Activities / Topics / Users"</li>
+      <li>Delete "This is not an activity"</li>
+    </ul>
+  </div>
+
+  <h2>1.1.0 <span>2018/11/20</span></h2>
+  <div>
+    <div>Feat</div>
+    <ul>
+      <li>"Not Activity" setting was added experimentally</li>
+      <li>We made it possible to change the background color and character color of Topic</li>
+      <li>The note is automatically saved as a draft when creating a new Activity</li>
+      <li>If the note of Activity is long, it will now be folded</li>
+      <li>Those without comments and images are no longer displayed on All Activity</li>
+    </ul>
+    <div>Fix</div>
+    <ul>
+      <li>Fixed an issue where display overlapped with All Activity / All Topics / All Users</li>
+      <li>Fixed a bug that does not start even by tapping the OGP thumbnail</li>
+      <li>Fixed a problem that ends when you tap a tab on "Welcome to Trickle" screen</li>
+    </ul>
+  </div>
+
+  <h2>1.0.3 <span>2018/11/14</span></h2>
+  <div>
+    <div>Fix</div>
+    <ul>
+      <li>Fix search screen and more.</li>
+    </ul>
+  </div>
+
+  <h2>1.0.1 <span>2018/11/11</span></h2>
+  <div>
+    <div>Fix</div>
+    <ul>
+      <li>minor fixes</li>
+    </ul>
+  </div>
+
+  <h2>1.0.0 <span>2018/11/10</span></h2>
+  <div>
+    <div>Feat</div>
+    <ul>
+      <li>First Release!</li>
+    </ul>
+  </div>
+</div>
+
+<div class="containers-bottom">
+  <!--  footer -->
+  <footer>
+    <div class="terms">
+      <a href="mailto:h13i32maru+trickle@gmail.com">Contact</a>
+      <a href="/-/terms.html">Terms</a>
+      <a href="/-/privacy.html">Privacy</a>
+      <a href="/-/oss.html">OSS</a>
+    </div>
+    <div class="copyright">
+      <a href="https://h13i32maru.jp">© 2019 Ryo Maruyama. All right reserved.</a>
+    </div>
+    <div class="contact">
+      <a href="https://twitter.com/h13i32maru"><span class="mdi mdi-twitter"></span></a>
+      <a href="https://github.com/h13i32maru"><span class="mdi mdi-github-circle"></span></a>
+      <a href="mailto:h13i32maru+trickle@gmail.com"><span class="mdi mdi-gmail"></span></a>
+    </div>
+  </footer>
+</div>
+</body>
+
+</html>
