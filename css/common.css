@@ -24,6 +24,26 @@ a {
   border-bottom: solid 1px #E5E5E5;
 }
 
+.language-container {
+  max-width: 980px;
+  position: relative;
+  margin: auto;
+}
+
+.languages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.languages a {
+  padding: 0 8px;
+  font-size: 0.8em;
+}
+
 /* navigation */
 .navigation {
   display: flex;
