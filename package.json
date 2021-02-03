@@ -7,10 +7,10 @@
     "start": "npx http-server ./ -p 10080 -c-1"
   },
   "dependencies": {
-    "@mdi/font": "^4.4.95"
+    "@mdi/font": "^5.9.55"
   },
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "http-server": "^0.12.3"
   },
   "homepage": "https://github.com/trickleapp/trickleapp.github.io#readme"
 }
