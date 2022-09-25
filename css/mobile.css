@@ -23,6 +23,7 @@
     flex: 1;
     border-radius: 4px;
     padding-bottom: 4px;
+    text-align: center;
   }
 
   /* screen shots */
@@ -59,4 +60,3 @@
     text-align: center;
   }
 }
-

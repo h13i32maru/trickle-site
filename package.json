@@ -4,7 +4,7 @@
   "private": true,
   "description": "",
   "scripts": {
-    "start": "npx http-server ./ -p 10080 -c-1"
+    "start": "npx http-server ./ -p 8081 -c-1"
   },
   "dependencies": {
     "@mdi/font": "^5.9.55"
