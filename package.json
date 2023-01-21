@@ -10,7 +10,7 @@
     "@mdi/font": "^5.9.55"
   },
   "devDependencies": {
-    "http-server": "^0.12.3"
+    "http-server": "^14.1.1"
   },
   "homepage": "https://github.com/trickleapp/trickleapp.github.io#readme"
 }
